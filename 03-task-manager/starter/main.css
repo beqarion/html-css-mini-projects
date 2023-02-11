@@ -297,4 +297,57 @@ Tasks
   width: 90vw;
   max-width: var(--fixed-width);
   margin: 0 auto;
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+.tasks {
+  display: grid;
+  gap: 1rem;
+}
+.single-task {
+  background: white;
+  padding: 1rem 2.5rem;
+  border-radius: var(--borderRadius);
+  box-shadow: var(--shadow-2);
+  transition: var(--transition);
+  display: flex;
+  justify-content: space-between;
+}
+.single-task:hover {
+  box-shadow: var(--shadow-4);
+}
+.single-task h5 {
+  margin-bottom: 0;
+}
+.single-task .fa-check-circle {
+  margin-left: -1.25rem;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  color: var(--green-dark);
+  visibility: hidden;
+}
+.task-completed h5 {
+  text-decoration: line-through;
+}
+.task-completed .fa-check-circle {
+  visibility: visible;
+}
+/* Task Links */
+.task-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0 0.5rem;
+}
+.delete-button,
+.edit-button {
+  background: transparent;
+  font-size: 0.75;
+  border: transparent;
+  cursor: pointer;
+}
+.edit-button {
+  color: var(--green-dark);
+}
+.delete-button {
+  color: var(--red-dark);
 }
